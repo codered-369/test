@@ -1,0 +1,44 @@
+extends base.pug
+
+block scripts 
+    script(src='/static/index.js')
+block style
+    style 
+        include ../static/style.css 
+block content          
+        section#introSection 
+            div Welcome to Vishwa's Dance Academy 
+            div.small Eat Sleep Dance Repeat 
+
+        section#missionSection 
+            h2 Our Mission 
+            div.card#c1  
+                h3 Dance Perfection
+                div.card-box 
+                    div.card-img 
+                        img(src="/static/img/d1.png")
+                    div.card-content 
+                    p This is the best dance academy in the World
+            div.card#c2
+                h3 Dance the way you like
+                div.card-box 
+                    div.card-img 
+                        img(src="/static/img/d2.jpg")
+                    div.card-content 
+                    p This is the best dance academy in the World 
+            div.card#c3 
+                h3 Expert Teaching 
+                div.card-box 
+                    div.card-img 
+                        img(src="/static/img/d3.jpg")
+                    div.card-content 
+                    p This is the best dance academy in the World
+
+
+        section#sponserSection 
+            h2 Our Sponsors 
+            div#sponsors 
+                img(src="/static/img/apple.png", alt="Sponsor images" class= "spImage")
+                img(src="/static/img/benz.png", alt="Sponsor images" class= "spImage")
+                img(src="/static/img/fb.png", alt="Sponsor images" class= "spImage")
+                img(src="/static/img/twtr.png", alt="Sponsor images" class= "spImage")

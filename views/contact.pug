@@ -1,0 +1,21 @@
+extends base.pug
+
+block scripts 
+    script(src='/static/index.js')
+
+block style
+    style 
+        include ../static/style.css
+        include ../static/styleContact.css
+block content 
+    div.card-img 
+        img(center / cover no-repeat src="/static/bg1.jpg")
+    h1 Contact Us
+    form(action = "/contact", method = "post" , class = "myForm")
+        input(type = "text", class = "myInput", name = "name", placeholder = "Enter your name")
+        input(type = "text", class = "myInput", name = "age", placeholder = "Enter your age")
+        input(type = "text", class = "myInput", name = "gender", placeholder = "Enter your gender")
+        input(type = "email", class = "myInput", name = "email", placeholder = "Enter your Email id")
+        input(type = "number", class = "myInput", name = "phone_number", placeholder = "Enter your phone number")
+        button(class="btn") 
+            |Submit 

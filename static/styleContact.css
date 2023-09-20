@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+*{
+    font-family: 'Kanit', sans-serif;
+    background-color: black;
+    /* background: url('/static/bg1.jpg'); */
+}
+h1{
+    text-align: center;
+    margin-top:-12px;
+    color:white;
+}
+.myInput{
+    display: block;
+    margin: 5px;
+    padding: 9px;
+    border: 4px solid #0d9cce;
+    width: 338px;
+    background-color: white;
+    border-radius: 9px;
+    outline: none;
+}
+.myForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 383px;
+    /* background-color: white; */
+}
+.btn {
+    text-align: center;
+    justify-content: center;
+    width: 91px;
+    color: #020201;
+    border: 4px solid #1da1b8;
+    margin-top: 12px;
+    background-color: #4a4ac8;
+    border-radius: 11px;
+    font-size: 17px;
+    cursor: pointer;
+}
+#footer{
+    margin-top: 430px;
+    padding: 5px;
+    height: 160px;
+}
+.card-img img{
+    height: 1000px;
+    
+}
